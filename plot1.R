@@ -22,9 +22,9 @@ febpower$Global_active_power<-as.numeric(as.character(febpower$Global_active_pow
 #converts Global_active_power column to numeric
 dev.off()
 #reset default parameters
-hist(febpower$Global_active_power,col='red',main='Global active power',
-     xlab='Global Active Power (in kilowatts)')
+hist(febpower$Global_active_power,col='red',main='Global Active Power',
+     xlab='Global Active Power (in kilowatts)',cex.axis=0.7)
 #generates plot
 dev.copy(png,file='plot1.png',width=480,height=480)
-#copies plot to png file
+#copies plot to PNG file
 dev.off() 
