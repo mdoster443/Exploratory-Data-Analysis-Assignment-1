@@ -41,4 +41,5 @@ legend('topright', pch = '_' , col = c('black','red','blue') ,
 #creates legend at top right
 #(3) all code to create 3rd plot
 dev.copy(png,file='plot3.png',width=480,height=480)
+#copies plot to PNG file
 dev.off() 

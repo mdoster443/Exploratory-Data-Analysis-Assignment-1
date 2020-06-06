@@ -49,9 +49,9 @@ legend('topright', pch = '_' , col = c('black','red','blue') , bty='n' , cex=0.8
 #creates bottomleft plot
 febpower$Global_reactive_power <- as.numeric(as.character(febpower$Global_reactive_power))
 #converts reactive power from factor to numeric
-with(febpower , plot(date_time,Global_reactive_power,type='l',xlab='datetime',yaxt='n'))
-axis(2, at = seq(0.0, 0.5, by = 0.10) , cex.axis=0.8)
+with(febpower , plot(date_time,Global_reactive_power,type='l',xlab='datetime'))
 #creates bottomright plot
 #(4) 4 plots on one screen
 dev.copy(png,file='plot4.png',width=480,height=480)
+#copies plot to PNG file
 dev.off()     
