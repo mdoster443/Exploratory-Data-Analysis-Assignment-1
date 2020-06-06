@@ -24,5 +24,7 @@ dev.off()
 #reset default parameters
 hist(febpower$Global_active_power,col='red',main='Global active power',
      xlab='Global Active Power (in kilowatts)')
+#generates plot
 dev.copy(png,file='plot1.png',width=480,height=480)
+#copies plot to png file
 dev.off() 
